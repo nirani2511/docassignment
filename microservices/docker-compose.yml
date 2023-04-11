@@ -6,18 +6,18 @@ services:
       - "8080:80"
     volumes:
       - ./square/square.html:/usr/share/nginx/html/index.html
-    image: nirani2511/microservices_square:1.0
+    image: nirani25/microservices_square:1.0
   cube:
     build: ./cube
     ports:
       - "8081:80"
     volumes:
       - ./cube/cube.html:/usr/share/nginx/html/index.html
-    image: nirani2511/microservices_cube:1.0
+    image: nirani25/microservices_cube:1.0
   fibonacci:
     build: ./fibonacci
     ports:
       - "8082:80"
     volumes:
       - ./fibonacci/fibonacci.html:/usr/share/nginx/html/index.html
-    image: nirani2511/microservices_fibonacci:1.0
+    image: nirani25/microservices_fibonacci:1.0
