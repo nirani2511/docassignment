@@ -1,0 +1,20 @@
+version: "3"
+services:
+  square:
+    build: ./square
+    ports:
+      - "8080:80"
+    volumes:
+      - ./square/square.html:/usr/share/nginx/html/index.html
+  cube:
+    build: ./cube
+    ports:
+      - "8081:80"
+    volumes:
+      - ./cube/cube.html:/usr/share/nginx/html/index.html
+  fibonacci:
+    build: ./fibonacci
+    ports:
+      - "8082:80"
+    volumes:
+      - ./fibonacci/fibonacci.html:/usr/share/nginx/html/index.html
