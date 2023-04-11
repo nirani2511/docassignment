@@ -1,0 +1,15 @@
+version: '3'
+services:
+  square:
+    image: nginx:latest
+    volumes:
+      - ./square.html:/usr/share/nginx/html/index.html
+    ports:
+      - "8080:80"
+  cube:
+    image: nginx:latest
+    volumes:
+      - ./cube.html:/usr/share/nginx/html/index.html
+    ports:
+      - "8081:80"
+
